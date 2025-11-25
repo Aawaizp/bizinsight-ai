@@ -1,91 +1,119 @@
-# BizInsight AI — Autonomous Business Data Analyzer
+# 🚀 BizInsight AI — Autonomous Business Data Analyzer
 
-BizInsight AI is a free, beginner-friendly **GenAI + Agentic AI project** that 
-automatically analyzes business data and answers natural language questions like:
+BizInsight AI is a **GenAI + Agentic AI powered business intelligence tool** that helps users analyze CSV/Excel business datasets without writing any code.
 
-- "Which product is underperforming?"
-- "Why did sales drop in March?"
-- "Which product is in the middle?"
-- "Show monthly sales trend"
-- "Which day had the highest sales?"
-- "Which product is cheapest?"
+Simply upload your dataset and ask questions in plain English like:
 
-It uses:
+- *“Which product is underperforming?”*  
+- *“Show monthly sales trend.”*  
+- *“Which product is the cheapest?”*  
+- *“Which day had the highest sales?”*  
+- *“Show me the best and worst products.”*  
 
-✔ Python  
-✔ Streamlit  
-✔ Agentic Planning  
-✔ Local LLM Intent Parsing  
-✔ Rule-based fallback  
-✔ Automatic data visualizations  
-
----
-
-## 🚀 Features
-
-### 1. **Data Upload**
-Upload any CSV or Excel file (e.g., sales or transactions).
-
-### 2. **Automatic Business Insights**
-The system automatically detects:
-
-- Sales column  
-- Product column  
-- Date column  
-- Price column  
-- Quantity  
-- Region, Segment, Category  
-
-Then generates:
-
-- Sales trend
-- Top 10 products
-- Monthly trend
-- Profit vs sales scatter
-- Region × Segment heatmap
-- Quantity vs sales chart
-
-### 3. **Agentic Query System**
-Ask questions in plain English:
-
-"Show me cheapest product"
-"Compare A vs B"
-"Which day had max sales?"
-"Which product is in the middle?"
-"Suggest improvements"
-
-
-The agent will:
-
-- Parse intent  
-- Plan tools  
-- Execute analysis  
-- Generate charts  
-- Respond in simple English  
-
-### 4. **Hybrid Engine**
-Uses both:
-
-- Local LLM (t5-small) for natural language
-- Agent Tools for real data analysis
-
-Fast + Smart.
+BizInsight AI automatically:
+✅ Detects key columns (sales, product, price, dates)  
+✅ Generates business insights  
+✅ Creates smart charts  
+✅ Uses an **Agentic AI planner** to call correct data tools  
+✅ Uses **LLM-based natural language parsing**  
+✅ Explains results in plain English  
 
 ---
 
-## 🧪 Sample Data for Testing
+## 🌐 Live Demo
 
-A sample Excel file is included:
-
-sample_data/GlobalSuperstore1.xlsx
-
-
-Users can test the full system without uploading their own data.
+👉 **Try the deployed app:**  
+🔗 https://bizinsight-ai-kdbvmmr7c5mt8nfdch2z4e.streamlit.app/
 
 ---
 
-## ▶️ Run Locally
+## 📊 Sample Dataset
 
-```bash
-pip install -r requirements.txt
-streamlit run app.py
+For testing, you may use the included dataset:
+
+📄 **GlobalSuperstore1.xlsx**  
+(Uploaded in repo)
+
+This dataset includes:
+- Product info  
+- Order dates  
+- Sales  
+- Shipping cost  
+- Customer + region details  
+
+---
+
+## ⚙️ Features
+
+### 🔍 **1. Automatic Data Understanding**
+- Auto-detects:
+  - Sales column  
+  - Product column  
+  - Price column  
+  - Date column  
+- Shows summary stats  
+- Shows best/worst products  
+- Finds monthly sales trends  
+
+### 🤖 **2. Agentic AI Engine**
+A custom-built agent system:
+- Interprets user intent  
+- Maps intent → Tools  
+- Executes step-by-step plans  
+- Handles:
+  - best product  
+  - worst product  
+  - mid product  
+  - monthly trend  
+  - drop detection  
+  - cheapest product  
+  - product comparison  
+  - highest sales day  
+  - improvement suggestions  
+
+### 🧠 **3. LLM Integration (T5 Small)**
+- Helps interpret complex natural language  
+- Works as intent parser fallback  
+- Ensures flexible user queries  
+
+### 📈 **4. Visual Insights**
+- Auto-generated:
+  - Line charts  
+  - Bar charts  
+  - Tables  
+  - Summaries  
+
+---
+
+## 🛠️ Tech Stack
+
+| Component | Technology |
+|----------|------------|
+| Frontend UI | Streamlit |
+| Data Processing | Pandas, NumPy |
+| ML / LLM | Transformers (T5-small), Torch |
+| Agent System | Custom Python-based planner & tool executor |
+| Deployment | Streamlit Cloud |
+| File Support | CSV, XLSX, XLS |
+
+---
+
+## 💡 Example Questions You Can Ask
+
+Try any of these:
+
+“Which product is in the middle?”
+
+“Which day had highest sales?”
+
+“Which product is cheapest?”
+
+“Show me monthly sales trend.”
+
+“Show all products from lowest to highest price.”
+
+“Compare product A vs B.”
+
+“Why did sales drop in any month?”
+
+“Which region performs best?”
