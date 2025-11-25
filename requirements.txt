@@ -2,7 +2,9 @@ streamlit
 pandas
 numpy
 matplotlib
-altair
 transformers
 torch
-sentencepiece
+scikit-learn
+openpyxl==3.1.2
+xlrd
+python-dateutil
